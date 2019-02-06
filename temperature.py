@@ -15,9 +15,12 @@ def check_temp(t):
 if __name__ == '__main__':
     t = input("Current tempurature:")
     while t != 'q':
-        t = int(t)
 
-        print(check_temp(t))
+        if t.isnumeric():
+            t = int(t)
+            print(check_temp(t))
+        else:
+            print("You must enter number or 'q' only.")
 
         t = input("Enter new temperature:")
 
