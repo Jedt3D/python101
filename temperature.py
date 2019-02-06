@@ -15,7 +15,7 @@ def check_temp(t):
 if __name__ == '__main__':
     t = input("Current tempurature:")
     while t != 'q':
-
+        # TODO: Add more document
         if t.isnumeric():
             t = int(t)
             print(check_temp(t))
